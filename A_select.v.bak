@@ -1,0 +1,10 @@
+module a_select (pc, r1, a_sel, out);
+input [31:0] pc, r1;
+input a_sel;
+output [31:0] out;
+
+wire [31:0] out;
+
+assign out = (a_sel)? pc : r1;
+
+endmodule
